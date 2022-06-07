@@ -26,7 +26,7 @@ export class AppComponent implements OnInit {
     //   console.log(error);
     // })
 
-    this.http.get('https://jsonplaceholder.typicode.com/users').subscribe({
+    this.http.get('http://127.0.0.1:8000/users/').subscribe({
       next: response => this.users = response,
       error: error => console.log(error)
     })
